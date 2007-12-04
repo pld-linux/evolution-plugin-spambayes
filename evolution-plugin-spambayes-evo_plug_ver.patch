@@ -1,0 +1,21 @@
+diff -ur evolution-plugin-spambayes-0.1.4.orig/configure.ac evolution-plugin-spambayes-0.1.4/configure.ac
+--- evolution-plugin-spambayes-0.1.4.orig/configure.ac	2007-08-06 05:01:39.000000000 +0000
++++ evolution-plugin-spambayes-0.1.4/configure.ac	2007-12-04 00:40:36.000000000 +0000
+@@ -24,7 +24,7 @@
+ 
+ PKG_PROG_PKG_CONFIG
+ 
+-plugindir=`$PKG_CONFIG --variable plugindir evolution-plugin-2.10`
++plugindir=`$PKG_CONFIG --variable plugindir evolution-plugin`
+ AC_SUBST(plugindir)
+ 
+ SOEXT='.so'
+@@ -35,7 +35,7 @@
+ 
+ PKG_CHECK_MODULES(SB_EPLUGIN,[
+   glib-2.0
+-  evolution-plugin-2.10
++  evolution-plugin
+   camel-provider-1.2
+   gconf-2.0
+ ])
