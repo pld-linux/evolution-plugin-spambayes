@@ -41,7 +41,7 @@ wtyczki filtrującej SpamAssassina autorstwa Viveka Jaina (i innych).
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__autoconf}
